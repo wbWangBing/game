@@ -31,7 +31,7 @@ int check=-1;  //加入判断改哪一方下棋
 void qipan::mousePressEvent(QMouseEvent *event)
 {
       check*=-1;
-    if(check == 1){
+    if(check == 1){        //轮到玩家1下棋
     qDebug() << "mouse pressed";
     int x1 = event->x();
     int y1 = event->y();
