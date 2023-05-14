@@ -167,5 +167,6 @@ void qipan::mousePressEvent(QMouseEvent *event)
              }
         }
        return false; // 没有获胜
-        }
+}
 
+//
