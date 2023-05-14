@@ -27,7 +27,7 @@ qipan::qipan(QWidget *parent) : QWidget(parent)
         board_[i].resize(COL_COUNT);
     }
 }
-int check=-1;
+int check=-1;  //加入判断改哪一方下棋
 void qipan::mousePressEvent(QMouseEvent *event)
 {
       check*=-1;
