@@ -168,3 +168,4 @@ void qipan::mousePressEvent(QMouseEvent *event)
         }
        return false; // 没有获胜，返回false
         }
+//  程序运行完毕
