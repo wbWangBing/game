@@ -31,7 +31,7 @@ int check=-1;
 void qipan::mousePressEvent(QMouseEvent *event)
 {
       check*=-1;
-    if(check){
+    if(check == 1){
     qDebug() << "mouse pressed";
     int x1 = event->x();
     int y1 = event->y();
@@ -61,14 +61,14 @@ void qipan::mousePressEvent(QMouseEvent *event)
         return;
     }
     }
-    if(-check){
+    if(-check == 1){
     // 生成玩家2的移动
     int x2 = event->x();
     int y2 = event->y();
      qDebug() << "mouse1 pressed";
     // 获取鼠标点击的单元格的行列坐标
-    int row2 = y2 / 36+1;
-    int col2 = x2 / 36+1;
+    int row2 = y2 / 36;
+    int col2 = x2 / 36;
 
     // 检查该单元格是否已经有棋子
     if (board_[row2][col2] != pieceColor::NONE) {
