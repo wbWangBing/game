@@ -61,7 +61,7 @@ void qipan::mousePressEvent(QMouseEvent *event)
         return;
     }
     }
-    if(-check == 1){
+    if(-check == 1){     //轮到玩家2下棋
     // 生成玩家2的移动
     int x2 = event->x();
     int y2 = event->y();
